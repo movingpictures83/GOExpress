@@ -1,0 +1,13 @@
+Prefix pipelines/GOExpress/
+Plugin GO inputfile parameters/parameters.GO.txt outputfile results
+Plugin SubsetScore inputfile parameters/parameters.subset.txt outputfile subset
+Plugin GOHeatmap inputfile parameters/parameters.viz.txt outputfile Viz/heatmap.pdf
+Plugin GOCluster inputfile parameters/parameters.viz.txt outputfile Viz/cluster.pdf
+Plugin GeneTable inputfile parameters/parameters.viz.txt outputfile genetable.csv
+Plugin GeneList inputfile parameters/parameters.viz.txt outputfile genelist.csv
+Plugin PlotExpression inputfile parameters/parameters.expplot.txt outputfile Viz/plotexp.pdf
+Plugin PlotExpression inputfile parameters/parameters.expsym.txt outputfile Viz/plotsym.pdf
+Plugin ExpressionProfile inputfile parameters/parameters.expplot.txt outputfile Viz/expprofile.pdf
+Plugin PlotUnivariate inputfile parameters/parameters.univariate.txt outputfile Viz/univariate.pdf
+Plugin HistogramScore inputfile subset.rds outputfile Viz/histScore.pdf
+Plugin QuantileScore inputfile subset.rds outputfile Viz/quantScore.pdf
